@@ -1,0 +1,54 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Agregar Producto</h2>
+            <form id="formAddProduct">
+                <div class="col-md-6">
+                    <label class="form-label" for="title">Titulo</label>
+                    <input class="form-control" type="text" id="title" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="description">Descripcion</label>
+                    <input class="form-control" type="text" id="description" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="price">Precio</label>
+                    <input class="form-control" type="number" id="price" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="stock">Stock</label>
+                    <input class="form-control" type="number" id="stock" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="category">Categoria</label>
+                    <input class="form-control" type="text" id="category" />
+                </div>
+                <div class="col-md-6 mt-3">
+                    <button class="btn btn-success" id="addProduct">Agregar</button>
+                </div>
+            </form>
+
+            <h2>Borrar Producto</h2>
+            <form id="formDeleteProduct" class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="productId">Ingrese ID producto</label>
+                    <input class="form-control" type="text" id="productId" />
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-danger" id="deleteProduct">Borrar</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-6 ">
+            <h2>Lista de productos</h2>
+            <div id="container">
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
